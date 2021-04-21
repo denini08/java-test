@@ -28,4 +28,4 @@ jobs:
       - name: Java tests
         uses: marcellocordeiro/stress-action@main
         with:
-          test_type: maven
+          testing_tool: maven
