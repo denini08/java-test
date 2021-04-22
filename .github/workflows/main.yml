@@ -24,8 +24,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
       - name: Java tests
-        uses: marcellocordeiro/stress-action@main
+        uses: marcellocordeiro/shaker-action@main
         with:
           testing_tool: maven
+          no_stress_runs: 2
+          stress_runs: 16

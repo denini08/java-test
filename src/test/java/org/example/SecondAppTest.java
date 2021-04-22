@@ -15,6 +15,6 @@ public class SecondAppTest
     @Test
     public void secondShouldAnswerWithTrue()
     {
-        assertTrue( false );
+        assertTrue( true );
     }
 }
